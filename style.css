@@ -1,0 +1,62 @@
+body {
+    background-color: rgba(196, 191, 191, 0.308);
+}
+
+.navbar-brand {
+    width: 20%;
+    text-align: center;
+}
+
+#links-in-nav {
+    margin: auto;
+    margin-right: 20px;
+}
+
+.img-full-wdth {
+    width: 100%;
+    height: auto;
+}
+
+.img-flt {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    color: white;
+    background-color: dimgray;
+    border-top: 5px solid rgb(5, 124, 124);
+}
+
+@media screen and (max-width: 768px) {
+    /* Show Name in navbar to full width */
+    .navbar {
+        padding: 0.5rem 0px;
+    }
+    
+    .navbar-brand {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    
+    /* show links in the navbar in single row */
+    #links-in-nav {
+        flex-direction: row;  
+    }
+
+    /* margins in between navbar links */
+    #navbarNavAltMarkup {
+        margin: auto 25%;
+    }
+
+    .nav-item {
+        margin: auto 20px;
+
+    }
+
+    /* For XS screens show margin on left/right */
+    .container {
+        margin: auto 10px;
+    }
+}

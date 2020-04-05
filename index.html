@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap Bio page</title>
+    
+    <!-- Bootstramp CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand p-2 bg-info text-white" href="#">Sandesh Menjoge</a>
+        <div class="navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav" id="links-in-nav">
+            <a class="nav-item nav-link active" href="#">About <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+            <a class="nav-item nav-link" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+    <!-- End Navbar -->
+
+    <div class="container  mt-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 border p-5 bg-white">
+                <div class="row">
+                    <div class="col text-info border-bottom">
+                        <h3>About Me</h3>
+                    </div>
+                </div>
+
+                <!-- Below code is to display the image taking full length of container and text below the image -->
+                <!-- class d-md-none makes below elements hidden for screen size medium and bigger -->
+                <div class="row mt-3">
+                    <div class="col-*-12 d-md-none">
+                        <img class="mb-3 img-full-wdth " src="assets/Sandesh.jpg.JPG" alt="bio.jpg">
+                        <p> My name is Sandesh Menjoge. I am a Software developer based in NYC. I have over 14 years of Software development experience in Investment Banking and Insurance domain. I am currenly learning to be a Full stack web developer as part of Rutgers University bootcamp program.</p>
+                        <p> I have a Bachelors degree in Electronics and Communication Engineering from Nagpur University in India. I completed by studies in 2005 and started my first job immediately after in one of India's leading Software services company. </p>
+                        <p> When not working, I like to play cricket or soccer. When in India, I lead of my company's cricket team where we finished the season unbeaten. In other hobbies, I like to jump out of perfectly working aeroplanes. I have logged more than 120 jumps so far. </p>
+                    </div>
+                </div>
+
+                <!-- Below code is to display the image floating left of container and text wrapping the image frm right and bottom -->
+                <!-- classes d-none and d-sm-none makes below elements hidden for screen sizes xs and small.
+                    classe d-md-block makes below elements visible for screen size medium and bigger -->
+                <div class="row mt-3">
+                    <div class="col-*-12 d-none d-sm-none d-md-block">
+                        <img class="float-left img-flt mr-3 mb-3" src="assets/Sandesh.jpg.JPG" alt="bio.jpg">
+                        <p> My name is Sandesh Menjoge. I am a Software developer based in NYC. I have over 14 years of Software development experience in Investment Banking and Insurance domain. I am currenly learning to be a Full stack web developer as part of Rutgers University bootcamp program.</p>
+                        <p> I have a Bachelors degree in Electronics and Communication Engineering from Nagpur University in India. I completed by studies in 2005 and started my first job immediately after in one of India's leading Software services company. </p>
+                        <p> When not working, I like to play cricket or soccer. When in India, I lead of my company's cricket team where we finished the season unbeaten. In other hobbies, I like to jump out of perfectly working aeroplanes. I have logged more than 120 jumps so far. </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- placeholder column for screen sizes large and xl -->
+            <div class="col-lg-4 col-xl-4">               
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer text-center mt-5 p-2 bg-dark">
+        <p>© Copyright</p>
+    </footer>
+    
+</body>
+</html>

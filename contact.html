@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Bio page</title>
+
+  <!-- Bootstramp CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand p-2 bg-info text-white" href="#">Sandesh Menjoge</a>
+        <div class="navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav" id="links-in-nav">
+                <a class="nav-item nav-link" href="index.html">About</a>
+                <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-item nav-link active" href="#">Contact <span class="sr-only">(current)</span></a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+  <div class="container  mt-3">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 border p-5 bg-white">
+        <div class="row">
+          <div class="col text-info border-bottom">
+            <h3>Contact</h3>
+          </div>
+        </div>
+
+        <form class="mt-3">
+          <div class="form-group">
+            <label for="InputName">Name</label>
+            <input type="text" id="InputName" class="form-control" placeholder="First-Name Last-Name">
+          </div>
+          <div class="form-group">
+            <label for="InputEmail">Email address</label>
+            <input type="email" id="InputEmail" class="form-control" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="InputMessage">Message</label>
+            <textarea id="InputMessage" class="form-control" rows="5" maxlength="500" placeholder="Please enter your message here, maximum upto 500 characters."></textarea>
+          </div>
+          <button onclick="alertAndReset()" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+        <!-- placeholder column for screen sizes large and xl -->
+        <div class="col-lg-4 col-xl-4">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer text-center mt-5 p-2 bg-dark">
+    <p>© Copyright</p>
+  </footer>
+
+  <script>
+    function alertAndReset() {
+      alert("Thank You for reaching out. I will respond to your message as soon as possible!");
+      window.location.href = "contact.html";
+    }
+  </script>
+</body>
+</html>
